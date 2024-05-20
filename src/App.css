@@ -3,40 +3,74 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: black; /* Add a black background */
+  color: white; /* Ensure text is readable on black background */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.bookshelfDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formDiv {
+  padding: 1em;
+  margin-bottom: 2em;
+  border: 1px solid white; /* Outline for the form */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.formDiv h3 {
+  margin-bottom: 1em;
 }
 
-.card {
-  padding: 2em;
+.formDiv form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
-.read-the-docs {
-  color: #888;
+.formDiv form div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.formDiv form label {
+  margin-bottom: 0.5em;
+}
+
+.formDiv form input {
+  padding: 0.5em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.formDiv form button {
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  border: none;
+  background-color: #61dafb;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formDiv form button:hover {
+  background-color: #21a1f1;
+}
+
+.bookCardsDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+}
+
+.bookCard {
+  background-color: grey; /* Grey background for added books */
+  padding: 1em;
+  border-radius: 4px;
+  color: black;
 }
